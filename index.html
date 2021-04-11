@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Zilla+Slab+Highlight:wght@400;700&family=Zilla+Slab:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
     <link rel="stylesheet" href="style.css"/>
     <title>Gra papier kamień nożyczki</title>
 </head>
@@ -44,8 +45,10 @@
 <div class="bottom-section">
 <div class="panel-left">
     <h3>Last game</h3>
-    <p>Twój wybór: <span data-summary="your-choice"></span></p>
-    <p>Wybór komputera: <span data-summary="ai-choice"></span></p>
+
+    <p>Player<span data-summary="your-choice"></span></p>
+    <p class="compChoice">COM 1<span data-summary="ai-choice"></span></p>
+
     <h3>Result<span data-summary="who-win"></span></h3>
 </div>
 
@@ -57,6 +60,8 @@
     <p class="numbers">Games:<span>0</span></p>
 </div>
 </div>
+
+<i class="nes-icon github is-medum"></i>
 
 <script src="main.js"></script>
 </body>
