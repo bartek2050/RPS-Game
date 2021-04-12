@@ -7,42 +7,25 @@
 }
 body {
     background-color: #FFEA00;
+
 }
 h1 {
     text-align: center;
     margin: 20px 0;
-}
-
-h3 {
-    margin: 30px 0;
-}
-
-.panel-left,
-.panel-right {
-    display: inline-block;
-    width: 48%;
-    overflow: hidden;
-    margin: 40px auto 0;
-    text-align: center;
-}
-
-.panel-left p {
-    font-size: 20px;
-}
-
-.panel h3 {
-    text-align: center;
-}
-
-h1 {
     font-family: 'Press Start 2P', cursive;
-}
-h3 {
-    text-transform: uppercase;
 }
 
 h2 {
     font-size: 40px;
+}
+
+h3 {
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+button {
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0, pointer;
 }
 
 .select {
@@ -97,7 +80,17 @@ span {
     align-items: center;
 }
 
-.compChoice img{
+.playerChoice {
+    display: flex;
+    flex-direction: column;
+}
+
+.playerChoice img {
+    width: 50px;
+    height: 50px;
+}
+
+.aiChoice img{
     width: 50px;
     height: 50px;
 }
@@ -113,10 +106,39 @@ span {
     border: 5px solid #000;
 }
 
-.panel-left {
-    width: 40%;
+.panel-left, .panel-right {
+    display: inline-block;
+    width: 30%;
+    overflow: hidden;
+    margin: 40px auto 0;
+    text-align: center;
     height: auto;
     border: 5px solid #000;
+}
+
+.lastChoice {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choiceBox {
+    border: 5px solid #000;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choiceImage {
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+}
+
+.panel-left p {
+    font-size: 20px;
 }
 
 .panel-left h3{
@@ -151,6 +173,18 @@ span {
     left: 5px;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.footer a {
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
 
 .loader {
     line-height: 16px;
@@ -309,3 +343,4 @@ span {
 .hidden {
     display: none;
 }
+

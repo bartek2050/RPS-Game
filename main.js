@@ -39,8 +39,8 @@ function checkResult(player, ai) {
 }
 
 function publishResult(player, ai, result) {
-    document.querySelector("[data-summary = \"your-choice\"]").innerHTML = `<img src=${player}.png>`
-    document.querySelector("[data-summary = \"ai-choice\"]").innerHTML = `<img src=${ai}.png>`
+    document.querySelector("[data-summary = \"your-choice\"]").innerHTML = `<img class="choiceImage" src=${player}.png>`
+    document.querySelector("[data-summary = \"ai-choice\"]").innerHTML = `<img class="choiceImage" src=${ai}.png>`
     document.querySelector("[data-summary = \"who-win\"]").textContent = result;
 
     document.querySelector("p.numbers span").textContent = ++gameSummary.numbers;
@@ -54,7 +54,7 @@ function publishResult(player, ai, result) {
         document.querySelector("[data-summary = \"who-win\"]").style.color = "black"
     } else {
         document.querySelector("p.losses span").textContent = ++gameSummary.losses;
-        document.querySelector("[data-summary = \"who-win\"]").textContent = "LOST"
+        document.querySelector("[data-summary = \"who-win\"]").textContent = "YOU LOSE"
         document.querySelector("[data-summary = \"who-win\"]").style.color = "darkred"
     }
 }
