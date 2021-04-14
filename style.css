@@ -5,10 +5,12 @@
     font-family: 'Zilla Slab', serif;
     cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=), auto;
 }
+
 body {
     background-color: #FFEA00;
 
 }
+
 h1 {
     text-align: center;
     margin: 20px 0;
@@ -90,7 +92,7 @@ span {
     height: 50px;
 }
 
-.aiChoice img{
+.aiChoice img {
     width: 50px;
     height: 50px;
 }
@@ -141,7 +143,7 @@ span {
     font-size: 20px;
 }
 
-.panel-left h3{
+.panel-left h3 {
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -176,14 +178,32 @@ span {
 .footer {
     display: flex;
     justify-content: center;
-    margin-top: 90px;
+    margin-top: 50px;
+    align-items: flex-end;
 }
 
-.footer a {
+.githubIcon {
+    width: 20px;
+}
+
+.footer a{
     font-family: 'Press Start 2P', cursive;
     text-decoration: none;
     color: #000;
     font-size: 12px;
+    display: flex;
+    padding: 0;
+}
+
+.footer img {
+    margin-right: 5px;
+    margin-bottom: 4px;
+}
+
+.footer a div:last-child {
+    padding-left: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
 }
 
 .loader {
@@ -273,6 +293,7 @@ span {
         transform: scale(0.5);
     }
 }
+
 @-webkit-keyframes drop2 {
     0% {
         transform: translateY(-50px);
@@ -284,6 +305,7 @@ span {
         transform: translate(0);
     }
 }
+
 @keyframes drop2 {
     0% {
         transform: translateY(-50px);
@@ -295,6 +317,7 @@ span {
         transform: translate(0);
     }
 }
+
 @-webkit-keyframes drop3 {
     0% {
         transform: translateY(-50px);
@@ -306,6 +329,7 @@ span {
         transform: translate(0);
     }
 }
+
 @keyframes drop3 {
     0% {
         transform: translateY(-50px);
@@ -317,6 +341,7 @@ span {
         transform: translate(0);
     }
 }
+
 @-webkit-keyframes drop4 {
     0% {
         transform: translateY(-50px);
@@ -328,6 +353,7 @@ span {
         transform: translate(0);
     }
 }
+
 @keyframes drop4 {
     0% {
         transform: translateY(-50px);
