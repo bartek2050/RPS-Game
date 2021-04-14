@@ -69,7 +69,7 @@ function endGame() {
 
 function startGame() {
     if (!game.playerHand) return (
-        alert("Select hand!"),
+        alert("Please select hand!"),
         button.classList.remove("hidden"),
         loader.classList.add("hidden")
 )

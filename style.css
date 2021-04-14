@@ -70,6 +70,8 @@ button {
 
 .start:focus {
     outline: none;
+    background-color: #FFFFFF;
+    color: #000;
 }
 
 span {
@@ -198,7 +200,7 @@ span {
 
 .footer img {
     margin-right: 5px;
-    margin-bottom: 4px;
+    margin-bottom: 1px;
 }
 
 .footer a div:last-child {
