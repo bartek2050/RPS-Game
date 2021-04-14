@@ -38,7 +38,8 @@ button {
 }
 
 .select img {
-    width: 200px;
+    width: 160px;
+    height: 150px;
     margin: 20px;
     display: inline-block;
 }
@@ -370,3 +371,34 @@ span {
     display: none;
 }
 
+@media (max-width: 600px) {
+    h1 {
+        font-size: 18px;
+        margin: 20px 0 0 0;
+    }
+    .select h3{
+        margin: 10px;
+    }
+    .select img {
+        width: 120px;
+        height: 125px;
+        margin: 10px 0;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+    }
+
+    .panel-left, .panel-right {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .panel-left, .panel-right h3{
+        font-size: 12px;
+    }
+
+    .footer {
+        margin-top: 20px;
+    }
+}
