@@ -2,8 +2,6 @@ const hands = [...document.querySelectorAll(".select img")];
 const button = document.querySelector(".start");
 const loader = document.querySelector(".loader");
 
-console.log(hands);
-
 const gameSummary = {
     numbers: 0,
     wins: 0,
@@ -27,7 +25,6 @@ function aiChoice() {
 }
 
 function checkResult(player, ai) {
-    console.log(player, ai);
     if (player === ai) {
         return "draw"
     } else if ((player === "paper" && ai === "rock") || (player === "rock" && ai === "scissors") ||
