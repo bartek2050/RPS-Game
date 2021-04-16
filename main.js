@@ -39,8 +39,8 @@ function checkResult(player, ai) {
 }
 
 function publishResult(player, ai, result) {
-    document.querySelector("[data-summary = \"your-choice\"]").innerHTML = `<img class="choiceImage" src=${player}.png>`
-    document.querySelector("[data-summary = \"ai-choice\"]").innerHTML = `<img class="choiceImage" src=${ai}.png>`
+    document.querySelector("[data-summary = \"your-choice\"]").innerHTML = `<img class="choiceImage" src=assets/${player}.png>`
+    document.querySelector("[data-summary = \"ai-choice\"]").innerHTML = `<img class="choiceImage" src=assets/${ai}.png>`
     document.querySelector("[data-summary = \"who-win\"]").textContent = result;
 
     document.querySelector("p.numbers span").textContent = ++gameSummary.numbers;
